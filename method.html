@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        body {
+            background-color: #A3C4BC;
+            font-family: Arial, Helvetica, sans-serif;
+            display: grid;
+            grid-template-areas:
+                'nav nav'
+                'heading heading'
+                'subheading subheading'
+                'content image'
+                'subheading2 subheading2'
+                'content2 image2'
+                'subheading3 subheading3'
+                'content3 image3'
+                'footer footer';
+            gap: 100px;
+            margin: 0;
+            padding: 0; 
+        }
+
+        .topnav {
+            background-color: #BFD7B5;
+            overflow: hidden;
+            position: fixed;
+            width: 100%;
+            z-index: 1; 
+            grid-area: nav;
+        }
+
+        .topnav a {
+            float: left;
+            color: #000000;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 18px; /* Reduce font size */
+        }
+
+        .topnav a:hover {
+            background-color: #9c9c9cde;
+            cursor: pointer;
+        }
+
+        .topnav a.active {
+            background-color: #BFD7B5; 
+        }
+
+        #logo {
+            float: left;
+        }
+
+        #heading {
+            text-align: center;
+            grid-area: heading;
+            margin-top: 100px; 
+            font-size: 36px; 
+        }
+
+        #method1 #subheading{
+            text-align: center;
+            grid-area: subheading;
+            font-size: 36px;
+        }
+
+        #method1 .content{
+            grid-area: content;
+            text-align: center;
+            font-size: 20px;
+            background-color: #F2DDA4;
+            margin:0 auto;
+            max-width: 800px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="topnav">
+        <img id="logo" src="logo.png" alt="a 1 x 1 Rubik's Cube" width="100px" height="100px">
+        <a class="active" href="file:///H:/website/11DTP_website_assessment/home.html">Home</a>
+        <a class="active" href="file:///H:/website/11DTP_website_assessment/method.html">Method</a>
+        <a class="active" href="file:///H:/website/11DTP_website_assessment/cube.html">Cube</a>
+    </div>
+    <h1 id="heading">Method</h1>
+    <div id="method1">
+        <h2 id="subheading">Begginer's Method</h2>
+    <div class="content">
+        <p>Examine the cube's face and locate an edge piece that matches the center color. <br>
+            For example, if the center is white, find an edge with white. <br>
+            Position the edge piece by rotating the right face (R) clockwise, then turning <br>
+            the upper face (U) clockwise, and finally rotating the front face (F) clockwise. <br>
+            Repeat this process for all four edges to create a cross on the chosen face.
+        </p>
+    </div>
+    </div>
+</body>
+</html>
+
