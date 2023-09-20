@@ -46,6 +46,32 @@
         #logo {
             float: left;
         }
+        #footer{
+            grid-area:footer;
+            text-align:center;
+            font-size: 8px;
+            color:white;
+            padding:20px;
+            background: #141414;
+            
+
+        }
+
+        #back-to-top-button{
+            grid-area:footer;
+            float:right;
+            background-color:#A3C4BC;
+            color:black;
+            font-size:15px;
+            text-decoration: none;
+            padding:10px;
+        }
+
+        #back-to-top-button:hover{
+            background-color: white;
+            color:black;
+            cursor:pointer;
+        }
 </style>
 <body>
     <div class="topnav">
@@ -54,6 +80,10 @@
         <a class="active" href="file:///H:/website/11DTP_website_assessment/method.html">Method</a>
         <a class="active" href="file:///H:/website/11DTP_website_assessment/cube.html">Cube</a>
     </div>
-    
+    <div id ="footer">
+        <img id="logo" src="logo.png" alt="a 1 x 1 rubik's cube" width="100px" height="100px">
+        <h1>©2023 Tim Xu.All Rights Reserved</h1>
+        <a id = "back-to-top-button" href="#heading">TOP</a>
+    </div>
 </body>
 </html>
