@@ -3,5 +3,57 @@
     <head>
         <meta charset="utf-8">
     </head>
+<style>
+    body{
+        margin: 0; 
+        padding: 0; 
+        background-color: #A3C4BC;
+        font-family: Arial, Helvetica, sans-serif;
+        display:grid;
+        grid-template-areas:
+            'nav nav'
+            'content image';
+        gap: 100px;
+    }
 
+    .topnav {
+            background-color: #BFD7B5;
+            overflow: hidden;
+            position: fixed;
+            width: 100%;
+            z-index: 1; 
+            grid-area: nav;
+        }
+
+        .topnav a {
+            float: left;
+            color: #000000;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 18px; 
+        }
+
+        .topnav a:hover {
+            background-color: #9c9c9cde;
+            cursor: pointer;
+        }
+
+        .topnav a.active {
+            background-color: #BFD7B5; 
+        }
+
+        #logo {
+            float: left;
+        }
+</style>
+<body>
+    <div class="topnav">
+        <a class="active" href="file:///H:/website/11DTP_website_assessment/home.html"><img id="logo" src="logo.png" alt="a 1 x 1 rubik's cube" width="100px" height="100px"></a>
+        <a class="active" href="file:///H:/website/11DTP_website_assessment/home.html">Home</a>
+        <a class="active" href="file:///H:/website/11DTP_website_assessment/method.html">Method</a>
+        <a class="active" href="file:///H:/website/11DTP_website_assessment/cube.html">Cube</a>
+    </div>
+    
+</body>
 </html>

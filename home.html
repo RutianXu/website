@@ -14,20 +14,20 @@
                 'heading heading'
                 'content image'
                 'content2 image2'
-                'footer footer';
+                'footer footer'
+                ;
             gap: 100px;
         }
 
-        .topnav {
+        #topnav {
             background-color: #BFD7B5;
             overflow: hidden;
             position: fixed;
-            width: 100%;
-            z-index: 1; 
+            width: 100%; 
             grid-area: nav;
         }
 
-        .topnav a {
+        #topnav a {
             float: left;
             color: #000000;
             text-align: center;
@@ -36,12 +36,12 @@
             font-size: 18px; 
         }
 
-        .topnav a:hover {
-            background-color: #9c9c9cde;
+        #topnav a:hover {
+            color: white;
             cursor: pointer;
         }
 
-        .topnav a.active {
+        #topnav a.active {
             background-color: #BFD7B5; 
         }
 
@@ -77,14 +77,40 @@
             margin:0 auto;
             max-width: 800px;
         }
+        
+        #footer{
+            grid-area:footer;
+            text-align:center;
+            font-size: 8px;
+            color:white;
+            padding:20px;
+            background: #141414;
+            
 
+        }
+
+        #back-to-top-button{
+            grid-area:footer;
+            float:right;
+            background-color:#A3C4BC;
+            color:black;
+            font-size:15px;
+            text-decoration: none;
+            padding:10px;
+        }
+
+        #back-to-top-button:hover{
+            background-color: white;
+            color:black;
+            cursor:pointer;
+        }
 
     </style>
 </head>
 
 <body>
-    <div class="topnav">
-        <img id="logo" src="logo.png" alt="a 1 x 1 rubik's cube" width="100px" height="100px">
+    <div id="topnav">
+        <a class="active" href="file:///H:/website/11DTP_website_assessment/home.html"><img id="logo" src="logo.png" alt="a 1 x 1 rubik's cube" width="100px" height="100px"></a>
         <a class="active" href="file:///H:/website/11DTP_website_assessment/home.html">Home</a>
         <a class="active" href="file:///H:/website/11DTP_website_assessment/method.html">Method</a>
         <a class="active" href="file:///H:/website/11DTP_website_assessment/cube.html">Cube</a>
@@ -115,7 +141,13 @@
         realm of twisty puzzles and the diverse wonders they hold.
     </p>
     </div>
-    <div id="footer">
+    <div id="image2">
+        
+    </div>
+    <div id ="footer">
+        <img id="logo" src="logo.png" alt="a 1 x 1 rubik's cube" width="100px" height="100px">
+        <h1>©2023 Tim Xu.All Rights Reserved</h1>
+        <a id = "back-to-top-button" href="#heading">TOP</a>
     </div>
 </body>
 </html>
