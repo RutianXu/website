@@ -12,9 +12,9 @@
         display:grid;
         grid-template-areas:
             'nav nav'
-            'subheading subheading'
+            'heading heading'
             'content image'
-            'subheading2 subheading2'
+            'heading2 heading2'
             'content2 image2'
             'footer footer';
         gap: 100px;
@@ -76,6 +76,40 @@
             color:black;
             cursor:pointer;
         }
+
+        #heading {
+            text-align: center;
+            grid-area: heading;
+            margin-top: 100px; 
+            font-size: 36px;
+        }
+
+        #content {
+            grid-area: content;
+            text-align: center;
+            font-size: 20px;
+            background-color: #F2DDA4;
+            margin:0 auto;
+            max-width: 800px;
+        }
+
+        #heading2 {
+            text-align: center;
+            grid-area: heading2;
+            margin-top: 100px; 
+            font-size: 36px;
+        }
+
+        #content2 {
+            grid-area: content2;
+            text-align: center;
+            font-size: 20px;
+            background-color: #F2DDA4;
+            margin:0 auto;
+            max-width: 800px;
+        }
+</style>
+<body>
 </style>
 <body>
     <div class="topnav">
@@ -84,7 +118,36 @@
         <a class="active" href="file:///H:/website/11DTP_website_assessment/method.html">Method</a>
         <a class="active" href="file:///C:/Users/tim_x/Documents/website/cube.html">Cube</a>
     </div>
-    <h1 id="subheading">Gan Cubes</h1>
+    <h1 id="heading">Gan</h1>
+    <div id="content">
+        <p>
+            Gan is a prominent name in the realm of twisty puzzles, particularly <br>
+            known for its cutting-edge advancements in speedcubing. Among its <br>
+            standout creations, the Gan 356 X stands as a celebrated product. <br>
+            What sets Gan apart is its commitment to customization, <br>
+            allowing users to fine-tune their cubes to perfection. <br>
+            With features like adjustable magnets and the Gan Elasticity <br>
+            System (GES) for tension control, these cubes offer speedcubers <br>
+            a level of precision and adaptability that's unmatched. <br>
+            This dedication to innovation has solidified Gan's <br>
+            reputation as a go-to brand for those seeking to achieve <br>
+            faster solving times and a superior cubing experience.
+        </p>
+    </div>
+    <h1 id="heading2">Moyu</h1>
+    <div id="content2">
+        <p>
+            Moyu is a prominent and respected brand in the world of twisty <br>
+            puzzles and speedcubing, known for producing high-quality cubes <br>
+            that cater to both beginners and advanced cubers. One of their most <br>
+            renowned products is the Moyu Weilong GTS3. Moyu's cubes often feature <br>
+            smooth and stable turning, advanced corner cutting, and a range <br>
+            of options to suit various solving preferences. Their commitment <br>
+            to innovation has earned them a solid reputation among cubing enthusiasts, <br>
+            making Moyu cubes a popular choice for those seeking excellent <br>
+            performance and reliable quality in their puzzle-solving endeavors.
+        </p>
+    </div>
     <div id ="footer">
         <img id="logo" src="logo.png" alt="a 1 x 1 rubik's cube" width="100px" height="100px">
         <h1>©2023 Tim Xu.All Rights Reserved</h1>
