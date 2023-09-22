@@ -53,18 +53,18 @@
 
         #heading {
             text-align: center;
-            grid-area:nav;
+            grid-area:heading;
             margin-top: 200px; 
             font-size: 36px; 
         }
 
-        #method1 #subheading{
+        #subheading{
             text-align: center;
             grid-area: subheading;
             font-size: 36px;
         }
 
-        #method1 .content{
+        #content{
             grid-area: content;
             text-align: center;
             font-size: 20px;
@@ -75,15 +75,17 @@
 
         #image{
             grid-area:image;
+            display: flex;
+            flex-direction: column;
         }
 
-        #method2 #subheading2{
+        #subheading2{
             text-align: center;
             grid-area: subheading2;
             font-size: 36px;
         }
 
-        #method2 .content2{
+        #content2{
             grid-area: content2;
             text-align: center;
             font-size: 20px;
@@ -132,79 +134,83 @@
 
     <h1 id="heading">Method</h1>
 
-    <div id="method1">
+    <h2 id="subheading">Beginner's Method</h2>
 
-        <h2 id="subheading">Beginner's Method</h2>
-
-        <div class="content">
-            <p>Examine the cube's face and locate an edge piece that matches the center color. <br>
-            For example, if the center is white, find an edge with white. <br>
-            Position the edge piece by rotating the right face (R) clockwise, then turning <br>
-            the upper face (U) clockwise, and finally rotating the front face (F) clockwise. <br>
-            Repeat this process for all four edges to create a cross on the chosen face.
-            </p>
-            <p>In this step, your goal is to finish the first layer of the Rubik's Cube.<br>
-                Look for corner pieces that have two colors matching the adjacent centers. <br>
-                For instance, if you spot a corner with both orange and white, and it should <br>
-                fit between the orange and white centers, you're on the right track. <br>
-                To achieve this, you'll use a sequence of moves involving the front face <br>
-                (F) and the upper face (U). By applying these moves and repeating the process <br>
-                for all four corners, you'll quickly build the initial layer of your solved cube.</p>
-            <p>In the third step, you'll tackle the middle layer of the Rubik's Cube. <br>
-                Your goal is to correctly position the middle layer edge pieces. <br>
-                To do this, look for an edge piece that has one color matching the <br>
-                center of an adjacent face. Employing a specific sequence of moves <br>
-                involving the right face (R) and the upper face (U), you'll smoothly <br>
-                slide the edge piece into its designated spot. This sequence repeats <br>
-                for all four middle layer edges, effectively placing them where they belong.</p>
-            <p>The fourth step marks the approach to completing the Rubik's Cube's final <br>
-                layer. The initial challenge here is to orient the corners, ensuring that <br>
-                their colors align with the center faces. This is achieved through a <br>
-                set sequence of moves, including rotations of the right face (R) <br>
-                and the upper face (U). Once all corners are correctly oriented, <br>
-                you're prepared for the final showdown of step 5.</p>
-            <p>The fifth and final step involves permuting the remaining <br>
-                 final layer edges. Your aim is to rearrange these edges <br>
-                into their proper positions. This step requires a bit more <br>
-                complexity and uses a prescribed sequence of moves and <br>
-                algorithms, including rotations of the right face (R) <br>
-                 and the upper face (U). By following these precise <br>
-                sequences, you'll ultimately reach the coveted solved state <br>
-                of the Rubik's Cube, where all colors align on their respective faces.</p>
-        </div>
-
-        <div id="image"></div>
-
+    <div id="content">
+        <p>Examine the cube's face and locate an edge piece that matches the center color. <br>
+        For example, if the center is white, find an edge with white. <br>
+        Position the edge piece by rotating the right face (R) clockwise, then turning <br>
+        the upper face (U) clockwise, and finally rotating the front face (F) clockwise. <br>
+        Repeat this process for all four edges to create a cross on the chosen face.
+        </p>
+        <p>In this step, your goal is to finish the first layer of the Rubik's Cube.<br>
+            Look for corner pieces that have two colors matching the adjacent centers. <br>
+            For instance, if you spot a corner with both orange and white, and it should <br>
+            fit between the orange and white centers, you're on the right track. <br>
+            To achieve this, you'll use a sequence of moves involving the front face <br>
+            (F) and the upper face (U). By applying these moves and repeating the process <br>
+            for all four corners, you'll quickly build the initial layer of your solved cube.</p>
+        <p>In the third step, you'll tackle the middle layer of the Rubik's Cube. <br>
+            Your goal is to correctly position the middle layer edge pieces. <br>
+            To do this, look for an edge piece that has one color matching the <br>
+            center of an adjacent face. Employing a specific sequence of moves <br>
+            involving the right face (R) and the upper face (U), you'll smoothly <br>
+            slide the edge piece into its designated spot. This sequence repeats <br>
+            for all four middle layer edges, effectively placing them where they belong.</p>
+        <p>The fourth step marks the approach to completing the Rubik's Cube's final <br>
+            layer. The initial challenge here is to orient the corners, ensuring that <br>
+            their colors align with the center faces. This is achieved through a <br>
+            set sequence of moves, including rotations of the right face (R) <br>
+            and the upper face (U). Once all corners are correctly oriented, <br>
+            you're prepared for the final showdown of step 5.</p>
+        <p>The fifth and final step involves permuting the remaining <br>
+                final layer edges. Your aim is to rearrange these edges <br>
+            into their proper positions. This step requires a bit more <br>
+            complexity and uses a prescribed sequence of moves and <br>
+            algorithms, including rotations of the right face (R) <br>
+                and the upper face (U). By following these precise <br>
+            sequences, you'll ultimately reach the coveted solved state <br>
+            of the Rubik's Cube, where all colors align on their respective faces.</p>
     </div>
-    <div id="method2">
 
-        <h2 id = "subheading2">CFOP Method</h2>
-        <div class="content2">
-            <p>The first step is to create a cross on one face, usually the white face. <br>
-                 To do this, identify the edge pieces with the white color and <br>
-                position them correctly, matching them with their respective <br>
-                 centers. This requires precise rotations and maneuvers, including <br>
-                the use of the front (F), right (R), and upper (U) faces. <br>
-                 Achieving the cross sets the stage for the subsequent layers.</p>
-            <p>In the F2L step, the solver pairs corner and edge pieces and <br>
-                 inserts them into their proper positions within the first <br>
-                two layers simultaneously. This technique optimizes efficiency <br>
-                and is considered one of the most crucial steps in CFOP. <br>
-                Solvers aim to complete these layers without having to <br>
-                 return to the first layer, increasing solving speed significantly.</p>
-            <p>Next comes the OLL step, where the solver focuses on orienting all <br>
-                 the pieces on the last layer. This involves recognizing and <br>
-                executing algorithms to ensure that all the pieces on the <br>
-                last layer face the correct direction. These algorithms are <br>
-                 essential for efficient solving and bring the cube closer to its solved state.</p>
-            <p>The final step, PLL, revolves around permuting the pieces on the <br>
-                 last layer. Solvers use algorithms to move individual <br>
-                pieces to their intended positions while keeping the <br>
-                orientation achieved in the previous step (OLL) intact. <br>
-                 This completes the Rubik's Cube, aligning all its colors on <br>
-                 their respective faces, marking the successful conclusion of the CFOP method.</p>
-        </div>
+    <div id="image">
+        <img src="cross.png" alt="the cross step of the beginners method" width ="160px" height="160px">
+        <img src="first_layer.png" alt="the first layer step of the beginners method" width ="160px" height="160px">
+        <img src="F2L.png" alt="the F2L step of the beginners method" width ="160px" height="160px">
+        <img src="oll.png" alt="the top layer step of the beginners method" width ="160px" height="160px">
+        <img src="solved_cube.png" alt="the last step of the beginners method" width ="160px" height="160px">
     </div>
+
+
+
+
+    <h2 id = "subheading2">CFOP Method</h2>
+    <div id="content2">
+        <p>The first step is to create a cross on one face, usually the white face. <br>
+                To do this, identify the edge pieces with the white color and <br>
+            position them correctly, matching them with their respective <br>
+                centers. This requires precise rotations and maneuvers, including <br>
+            the use of the front (F), right (R), and upper (U) faces. <br>
+                Achieving the cross sets the stage for the subsequent layers.</p>
+        <p>In the F2L step, the solver pairs corner and edge pieces and <br>
+                inserts them into their proper positions within the first <br>
+            two layers simultaneously. This technique optimizes efficiency <br>
+            and is considered one of the most crucial steps in CFOP. <br>
+            Solvers aim to complete these layers without having to <br>
+                return to the first layer, increasing solving speed significantly.</p>
+        <p>Next comes the OLL step, where the solver focuses on orienting all <br>
+                the pieces on the last layer. This involves recognizing and <br>
+            executing algorithms to ensure that all the pieces on the <br>
+            last layer face the correct direction. These algorithms are <br>
+                essential for efficient solving and bring the cube closer to its solved state.</p>
+        <p>The final step, PLL, revolves around permuting the pieces on the <br>
+                last layer. Solvers use algorithms to move individual <br>
+            pieces to their intended positions while keeping the <br>
+            orientation achieved in the previous step (OLL) intact. <br>
+                This completes the Rubik's Cube, aligning all its colors on <br>
+                their respective faces, marking the successful conclusion of the CFOP method.</p>
+    </div>
+    
     <div id ="footer">
         <img id="logo" src="logo.png" alt="a 1 x 1 rubik's cube" width="100px" height="100px">
         <h1>©2023 Tim Xu. All Rights Reserved</h1>
